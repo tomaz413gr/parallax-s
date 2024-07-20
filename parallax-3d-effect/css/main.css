@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.layers {
+    perspective: 1000px;
+    overflow: hidden;
+
+}
+.layers__container{
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-x)) rotateY(var(--move-y));
+
+}
+.layers__item{
+    position: absolute;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+}
+.layer-2 {
+    /* position: absolute; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    width: 300px;
+    height: 90vh;
+    transform: translateZ(6.6667rem);
+}
